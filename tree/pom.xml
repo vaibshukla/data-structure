@@ -3,32 +3,26 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>io.vaibhav</groupId>
-    <artifactId>data-structure</artifactId>
+    <artifactId>tree</artifactId>
     <version>1.0.0</version>
 
-    <packaging>pom</packaging>
+    <parent>
+        <groupId>io.vaibhav</groupId>
+        <artifactId>data-structure</artifactId>
+        <version>1.0.0</version>
+    </parent>
 
     <properties>
-        <junit.version>5.9.1</junit.version>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
 
-    <modules>
-        <module>arrays</module>
-        <module>tree</module>
-    </modules>
-    <dependencyManagement>
-        <dependencies>
+    <dependencies>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
-            <version>${junit.version}</version>
-            <scope>test</scope>
         </dependency>
-        </dependencies>
+    </dependencies>
 
-    </dependencyManagement>
 </project>
